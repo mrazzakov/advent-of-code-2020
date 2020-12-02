@@ -31,7 +31,7 @@ def checkPass(pw_data):
         position_2 = int(pw_array[0].split('-')[1])-1 #index starts at 1
         password = pw_array[2]
                 
-        #check if amount is between min and max
+        #check if password letter is in the correct poisions
         pw_correct = checkPosition(password, correct_letter, position_1, position_2)
         if pw_correct:
             password_count = password_count+1
